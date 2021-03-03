@@ -30,6 +30,15 @@ switch varargin{1}
         % full path to montage file
         topFolder = fullfile(dataFolder,'chanLocs-64.mat');
         
+    case 'ICA_tmpdir'
+        % full path to montage file
+        if ismac()
+            topFolder = fullfile(dataFolder,'icaouttmp');
+        else
+            topFolder = '/home/octave/icaouttmp';
+            warning('ICA_tmpdir set as: /home/octave/icaouttmp, are you sure?')
+        end
+        
     otherwise
         error('Unrecognised option.')
 end

@@ -2,15 +2,6 @@
 % filter, downsample, and save EEG files
 %
 
-
-addpath(...
-    fullfile(genpath('/Users/enricovarano/Documents/MATLAB/eeglab2019_1')));
-addpath(...
-    fullfile(genpath('/Users/enricovarano/Documents/PhD/03B_EEG_analysis/2_ICA_filt/MEEGtools')));
-addpath(...
-    fullfile(genpath('/Users/enricovarano/Documents/PhD/03B_EEG_analysis/2_ICA_filt/enricoICA')));
-
-
 %%
 % subject IDs
 subjects = [1, 4, 5, 6, 8, 10, 12, 13, 15];
