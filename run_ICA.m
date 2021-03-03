@@ -84,7 +84,7 @@ opt.saveFolder = enICA.makePathEEGFolder(enICA.getPath('EEG','processed'),proc,o
 %% Set ICA options
 ICAopt.type = 'binica';
 % where binica / AMICA should write their tmp files
-ICAopt.tmpdir = '/Users/enricovarano/Documents/PhD/03B_EEG_analysis/data_2020/eegTrials/icaouttmp';
+ICAopt.tmpdir = enICA.getPath('ICA_tmpdir');
 
 
 % whether to reduce rank before ICA, these will be passed to ICA algo
