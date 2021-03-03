@@ -31,7 +31,7 @@ switch varargin{1}
         topFolder = fullfile(dataFolder,'chanLocs-64.mat');
         
     case 'ICA_tmpdir'
-        % full path to montage file
+        % full path to where binica / AMICA should write their tmp files
         if ismac()
             topFolder = fullfile(dataFolder,'icaouttmp');
         else
