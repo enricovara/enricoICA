@@ -10,7 +10,7 @@ if ispc()
     dataFolder = 'D:\dataEnrico';
 elseif ismac()
     % mac machine, Enrico!
-    dataFolder = ''; % Enrico set this to your favourite folder
+    dataFolder = '/Users/enricovarano/Documents/PhD/03B_EEG_analysis/data_2020/eegTrials';
 elseif isunix()
     % linux machinen octave's # assumed
     dataFolder = '/run/media/octave/MEGdataBKP/enricoData';
